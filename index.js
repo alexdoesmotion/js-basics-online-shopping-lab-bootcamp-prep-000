@@ -23,8 +23,6 @@ function viewCart() {
     var list = []
     var pretext = "In your cart, you have"
     if (cart.length === 1) {
-      var cartItem = Object.keys(cart[0])
-      var cartPrice = cart[0][Object.keys(cart[0])]
 console.log(`${pretext} ${Object.keys(cart[0])[0]} at $${cart[0][Object.keys(cart[0])[0]]}.`);
         return (`${pretext} ${Object.keys(cart[0])[0]} at $${cart[0][Object.keys(cart[0])[0]]}.`)
     } if (cart.length === 2) {
