@@ -31,13 +31,13 @@ console.log(`${pretext} ${Object.keys(cart[0])[0]} at $${Object.values(cart[0])[
       } else {
           for (let i = 0; i < cart.length; i++) {
             if (i < cart.length - 1) {
-         list.push(` ${Object.keys(cart[i])[0]} at $${Object.values(cart[i])[0]},`)
+         list.push(` ${Object.keys(cart[i])[0]} at $${Object.values(cart[i])[0]}`)
           } else {
           list.push(` and ${Object.keys(cart[i])[0]} at $${Object.values(cart[i])[0]}.`)
           }
-          console.log(`${pretext}${list}`)
-          return (`${pretext}${list}`)
         }
+           console.log(`${pretext}${list}`)
+          return (`${pretext}${list}`)
       }
 
     } else {
