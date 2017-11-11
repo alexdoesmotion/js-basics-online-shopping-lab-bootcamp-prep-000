@@ -58,11 +58,11 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  var removed == false
+  var removed = false
  for (let i = 0; i < cart.length; i++) {
       if (cart[i].hasOwnProperty(item)) {
      cart.splice(i,1)
-     removed == true
+     removed = true
     console.log(cart)
     }
   }
