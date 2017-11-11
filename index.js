@@ -52,7 +52,6 @@ function total() {
     list.push(cart[i][Object.keys(cart[i])[0]])
   }
   list.reduce((a, b) => a + b, 0);
-
   console.log(list)
   return list
 }
