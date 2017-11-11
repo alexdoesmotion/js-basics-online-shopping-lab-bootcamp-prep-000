@@ -51,9 +51,9 @@ function total() {
   for (let i = 0; i < cart.length; i++) {
     list.push(cart[i][Object.keys(cart[i])[0]])
   }
-  list.reduce((a, b) => a + b, 0);
-  console.log(list[0])
-  return list[0]
+  var sum = list.reduce((a, b) => a + b, 0);
+  console.log(sum)
+  return sum
 }
 
 function removeFromCart(item) {
