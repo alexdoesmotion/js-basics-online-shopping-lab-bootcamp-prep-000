@@ -26,8 +26,8 @@ function viewCart() {
 console.log(`${pretext} ${Object.keys(cart[0])[0]} at $${cart[0][Object.keys(cart[0])[0]]}.`);
         return (`${pretext} ${Object.keys(cart[0])[0]} at $${cart[0][Object.keys(cart[0])[0]]}.`)
     } if (cart.length === 2) {
-      console.log(`${pretext} ${Object.keys(cart[0])[0]} at $${cart[0][Object.keys(cart[0])[0]]} and ${Object.keys(cart[1])[0]} at $${cart[0][Object.keys(cart[1])[0]]}.`)
-      return (`${pretext} ${Object.keys(cart[0])[0]} at $${cart[0][Object.keys(cart[0])[0]]} and ${Object.keys(cart[1])[0]} at $${cart[0][Object.keys(cart[1])[0]]}.`)
+      console.log(`${pretext} ${Object.keys(cart[0])[0]} at $${cart[0][Object.keys(cart[0])[0]]} and ${Object.keys(cart[1])[0]} at $${cart[1][Object.keys(cart[1])[0]]}.`)
+      return (`${pretext} ${Object.keys(cart[0])[0]} at $${cart[0][Object.keys(cart[0])[0]]} and ${Object.keys(cart[1])[0]} at $${cart[1][Object.keys(cart[1])[0]]}.`)
       } else {
           for (let i = 0; i < cart.length; i++) {
             if (i < cart.length - 1) {
